@@ -1,6 +1,6 @@
-# About MintFlow - Network Stack
+# About MintFlow NetStack
 
-MintFlow - Network Stack is a new iOS VPN client and Network Debugger, with macOS support coming soon. The app supports WireGuard and is built on Cisco's open-source fd.io VPP (Vector Packet Processing). We believe we may be the first to port this to the Apple platform, leveraging VPP's WireGuard plugin to support multiple WireGuard interfaces and split tunneling directly within the app.
+MintFlow NetStack is a new iOS VPN client and Network Debugger, with macOS support coming soon. The app supports WireGuard and is built on Cisco's open-source fd.io VPP (Vector Packet Processing). We believe we may be the first to port this to the Apple platform, leveraging VPP's WireGuard plugin to support multiple WireGuard interfaces and split tunneling directly within the app.
 
 In addition to VPN functionality, MintFlow includes initial network debugging tools such as Ping and TraceRoute support.
 
@@ -11,7 +11,7 @@ In addition to VPN functionality, MintFlow includes initial network debugging to
 - **OpenVPN Protocol Support:** We plan to introduce a new, high-performance OpenVPN client natively built on VPP that can coexist with other VPN protocols.
 - **tvOS/macOS Support:** Expanding to more Apple platforms.
 
-MintFlow is a paid app, currently priced at $1.99. You can download it from the following link:
+MintFlow is a paid app, currently priced at $2.99. You can download it from the following link:
 
 [Download From the App Store](https://apps.apple.com/app/6742394218)
 
