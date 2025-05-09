@@ -17,6 +17,12 @@ MintFlow is a paid app, currently priced at $2.99. You can download it from the 
 
 ---
 
+# MintFlow Manual
+
+You can read the online manual of MintFlow NetStack here:
+
+[MintFlow NetStack Manual](https://mintflow.643216.xyz/manual)
+
 # About the Repo
 
 This repository is for users to submit issues and feature requests. We track them in our roadmap to ensure we’re addressing user needs and prioritizing improvements.
