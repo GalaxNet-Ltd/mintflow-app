@@ -11,7 +11,7 @@ In addition to VPN functionality, MintFlow includes initial network debugging to
 - **OpenVPN Protocol Support:** We plan to introduce a new, high-performance OpenVPN client natively built on VPP that can coexist with other VPN protocols.
 - **tvOS/macOS Support:** Expanding to more Apple platforms.
 
-MintFlow is a paid app, currently priced at $2.99. You can download it from the following link:
+MintFlow is a paid app, currently priced at $5.99. You can download it from the following link:
 
 [Download From the App Store](https://apps.apple.com/app/6742394218)
 
@@ -21,7 +21,7 @@ MintFlow is a paid app, currently priced at $2.99. You can download it from the 
 
 You can read the online manual of MintFlow NetStack here:
 
-[MintFlow NetStack Manual](https://mintflow.643216.xyz/manual)
+[MintFlow NetStack Manual](https://mintflow.galaxnet.cc/manual)
 
 # About the Repo
 
