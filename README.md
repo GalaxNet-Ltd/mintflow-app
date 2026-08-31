@@ -29,7 +29,7 @@ This repository is for users to submit issues and feature requests. We track the
 
 ## Examples
 
-- [HTTP response body rewrite with an `.mfhrb` bundle](examples/http-rewrite/README.md)
+- [HTTP response body rewrite examples with jq and JavaScript `.mfhrb` bundles](examples/http-rewrite/README.md)
 
 ---
 

@@ -1,0 +1,16 @@
+{
+  "format": "mintflow.http-rewrite-bundle",
+  "formatVersion": 1,
+  "rule": {
+    "apiVersion": 1,
+    "bodyMode": "json",
+    "direction": "response",
+    "match": "^https://jsonplaceholder\\.typicode\\.com/posts/1(?:\\?.*)?$",
+    "name": "jsonplaceholder-response-js-demo"
+  },
+  "script": {
+    "language": "javascript",
+    "name": "jsonplaceholder-response-js-demo",
+    "source": "body.title = \"MintFlow JavaScript rewrote this JSON response\";\nbody.mintflowDemo = {\n  language: \"JavaScript\",\n  method: context.method,\n  working: true\n};\nMF.done({ body });"
+  }
+}
