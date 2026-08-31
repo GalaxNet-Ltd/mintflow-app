@@ -5,7 +5,7 @@ These examples rewrite JSON responses from JSONPlaceholder's public demo endpoin
 - `jsonplaceholder-response-demo.mfhrb` uses MintFlow jq on `/todos/1`.
 - `jsonplaceholder-response-js-demo.mfhrb` uses JavaScript on `/posts/1`.
 
-The rules use different exact URL matchers, so both examples can be installed at the same time. Both bundles intentionally omit `priority`, so MintFlow assigns the default priority of `100`.
+The rules use different exact URL matchers, so both examples can be installed at the same time. Each bundle declares `"domain-suffix": "jsonplaceholder.typicode.com"`, which asks MintFlow to add that suffix to **Domain Capture** as part of the import. The add is idempotent, so importing both bundles or reimporting one does not create duplicates. Both bundles intentionally omit `priority`, so MintFlow assigns the default priority of `100`.
 
 ## Import from URL
 
@@ -25,11 +25,11 @@ https://raw.githubusercontent.com/GalaxNet-Ltd/mintflow-app/main/examples/http-r
 
 You can instead download [the jq bundle](jsonplaceholder-response-demo.mfhrb) or [the JavaScript bundle](jsonplaceholder-response-js-demo.mfhrb) and choose **Choose File…**. The system file picker can select a local file or one stored in iCloud Drive.
 
-MintFlow imports the script locally and creates the rule disabled. Review the matcher and source, then enable the rule. URL import is a one-time import; MintFlow does not retain or automatically refresh the remote URL.
+MintFlow imports the script locally, ensures the declared domain suffix is in the active profile's HTTP capture list, and creates the rule disabled. Review the matcher and source, then enable the rule. URL import is a one-time import; MintFlow does not retain or automatically refresh the remote URL.
 
 ## Prepare HTTP processing
 
-Body rewrite requires MintFlow Pro and working HTTP processing. Make sure the active profile's HTTPS inspection certificate is installed and trusted, TCP port `443` is configured, and either **Capture All** is enabled or `jsonplaceholder.typicode.com` is included in **Domain Capture**. If the client uses HTTP/3, temporarily enabling **Disable HTTP/3** can allow it to fall back to HTTP over TCP.
+Body rewrite requires MintFlow Pro and working HTTP processing. Make sure the active profile's HTTPS inspection certificate is installed and trusted and TCP port `443` is configured. The bundle import adds `jsonplaceholder.typicode.com` to **Domain Capture** for you. If the client uses HTTP/3, temporarily enabling **Disable HTTP/3** can allow it to fall back to HTTP over TCP.
 
 After enabling an imported rule, apply the profile and connect.
 

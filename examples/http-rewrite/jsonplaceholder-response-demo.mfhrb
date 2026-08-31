@@ -1,4 +1,5 @@
 {
+  "domain-suffix": "jsonplaceholder.typicode.com",
   "format": "mintflow.http-rewrite-bundle",
   "formatVersion": 1,
   "rule": {
