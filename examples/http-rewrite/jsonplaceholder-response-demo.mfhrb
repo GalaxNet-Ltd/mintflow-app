@@ -1,0 +1,16 @@
+{
+  "format": "mintflow.http-rewrite-bundle",
+  "formatVersion": 1,
+  "rule": {
+    "apiVersion": 1,
+    "bodyMode": "json",
+    "direction": "response",
+    "match": "^https://jsonplaceholder\\.typicode\\.com/todos/1(?:\\?.*)?$",
+    "name": "jsonplaceholder-response-demo"
+  },
+  "script": {
+    "language": "jq",
+    "name": "jsonplaceholder-response-demo",
+    "source": ".title = \"MintFlow rewrote this JSON response\" | .completed = true | .mintflowDemo = \"HTTP body rewrite is working\""
+  }
+}
