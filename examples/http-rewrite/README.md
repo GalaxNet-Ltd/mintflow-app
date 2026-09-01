@@ -13,11 +13,15 @@ In MintFlow, open **HTTP → HTTP Rewrite**, select the toolbar import button, c
 
 MintFlow jq example:
 
+[Open the raw jq bundle directly](https://raw.githubusercontent.com/GalaxNet-Ltd/mintflow-app/main/examples/http-rewrite/jsonplaceholder-response-demo.mfhrb)
+
 ```text
 https://raw.githubusercontent.com/GalaxNet-Ltd/mintflow-app/main/examples/http-rewrite/jsonplaceholder-response-demo.mfhrb
 ```
 
 JavaScript example:
+
+[Open the raw JavaScript bundle directly](https://raw.githubusercontent.com/GalaxNet-Ltd/mintflow-app/main/examples/http-rewrite/jsonplaceholder-response-js-demo.mfhrb)
 
 ```text
 https://raw.githubusercontent.com/GalaxNet-Ltd/mintflow-app/main/examples/http-rewrite/jsonplaceholder-response-js-demo.mfhrb
@@ -57,7 +61,7 @@ Open:
 
 `https://jsonplaceholder.typicode.com/posts/1`
 
-The JavaScript script changes `title` and adds a marker using MintFlow's read-only request `context`. The response should contain:
+The JavaScript rule uses `bodyMode: "json"`, so MintFlow parses the response JSON and exposes the mutable value as `$MF.resp.body`. The script changes `title`, reads the request method from `$MF.req.method`, and explicitly commits the result with `$MF.done({ body })`. The response should contain:
 
 ```json
 {

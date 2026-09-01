@@ -12,6 +12,6 @@
   "script": {
     "language": "javascript",
     "name": "jsonplaceholder-response-js-demo",
-    "source": "body.title = \"MintFlow JavaScript rewrote this JSON response\";\nbody.mintflowDemo = {\n  language: \"JavaScript\",\n  method: context.method,\n  working: true\n};\nMF.done({ body });"
+    "source": "const body = $MF.resp.body;\nbody.title = \"MintFlow JavaScript rewrote this JSON response\";\nbody.mintflowDemo = {\n  language: \"JavaScript\",\n  method: $MF.req.method,\n  working: true\n};\n$MF.done({ body });"
   }
 }
